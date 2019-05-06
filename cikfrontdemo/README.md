@@ -81,8 +81,7 @@ ___
 basic reuseable components example:
 - Footer (Folder)
     * Footer.css
-    * <details>
-        <summary>Footer.js</summary>
+    * Footer.js
         ```jsx
         import React from 'react';
         import './Footer.css';
@@ -98,7 +97,6 @@ basic reuseable components example:
         }
         export default Footer;
         ```
-   </details>
 
 
 
