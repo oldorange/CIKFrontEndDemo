@@ -68,10 +68,9 @@ actions folder contains all the server-connected functions in this app.
 
  - <details>
     <summary>const.js export all the const variable for server connections:</summary>
-    e.g.:
-    ```js
-    export const request_URI = "https://localhost:44344/gql";
-    ```
+        ```js
+        export const request_URI = "https://localhost:44344/gql";
+        ```
    </details>
  - index.js combine & export all the actions into one file.
 
