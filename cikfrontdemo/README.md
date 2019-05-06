@@ -80,29 +80,23 @@ basic reuseable components example:
 - Footer (Folder)
     * Footer.css
     * <details>
-    <summary>Footer.js</summary>
-    ```jsx
-    import React from 'react';
-    import './Footer.css';
-    const Footer = () => {
-        return (
-            <footer className="footer">
-                <br />
-                <hr />
-                <div className="container">
-                    <span className="text-muted">Copyright ©2019. All Right Reserved By</span><span> CIKTELECOM </span>
-                </div>
-                <br />
-            </footer>
-        );
-    }
-    export default Footer;
-    ```
+        <summary>Footer.js</summary>
+        ```JSX
+        import React from 'react';
+        import './Footer.css';
+        const Footer = () => {
+            return (
+                <footer className="footer">
+                    <br />
+                    <hr />
+                    <div className="container">
+                        <span className="text-muted">Copyright ©2019. All Right Reserved By</span><span> CIKTELECOM </span>
+                    </div>
+                    <br />
+                </footer>
+            );
+        }
+        
+        export default Footer;
+        ```
    </details>
-
-
-
-
-
-
-
