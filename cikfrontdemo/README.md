@@ -46,17 +46,19 @@ ___
 <details>
   <summary>root</summary>
 
-  - [node_modules](#node_modules)
-  - [public](#public)
+  - [node_modules (Installed Dependency Folder)](#node_modules)
+  - [public (App Entry Folder)](#public)
+    * [locales (translation file folder)](#locales)
+    * index.html (Entry Point)
+    * favicon.ico (Title icon)
+    * [manifest.json](https://developers.google.com/web/fundamentals/web-app-manifest/)
+  - [src (App Source Folder)](#src)
     * [actions](#actions)
     * [components](#components)
     * [images](#images)
-    * [components](#components)
-  - [src](#src)
-    * [actions](#actions)
-    * [components](#components)
-    * [images](#images)
-    * [components](#components)
+    * [pages](#pages)
+    * [reducers](#reducers)
+    * [store](#store)
 </details>
 
 
