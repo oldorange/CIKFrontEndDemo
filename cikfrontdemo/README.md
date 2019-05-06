@@ -1,3 +1,19 @@
+# CIK Frontend Demo
+
+## Requirements
+
+For development, you will only need Node.js installed on your environement.
+
+[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
+You should be able to run the following command after the installation procedure
+below.
+
+    $ node --version
+    v0.10.24
+
+    $ npm --version
+    1.3.21
+
 (Require Nodejs installed)In the project directory, you can run:
 
 ### `npm start`
@@ -23,3 +39,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ___
+
+## Demo Project Structure
+
+<details>
+  <summary>node_module</summary>
+  
+  ### Dependency packages
+</details>
