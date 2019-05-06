@@ -9,10 +9,10 @@ You should be able to run the following command after the installation procedure
 below.
 
     $ node --version
-    v0.10.24
+    v10.15.13
 
     $ npm --version
-    1.3.21
+    6.7.0
 
 (Require Nodejs installed)In the project directory, you can run:
 
@@ -46,4 +46,15 @@ ___
   <summary>node_module</summary>
   
   ### Dependency packages
+</details>
+
+<details>
+  <summary>node_module</summary>
+  
+  ### Dependency packages
+  <details>
+  <summary>node_module</summary>
+  
+  ### Dependency packages
+</details>
 </details>
