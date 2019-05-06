@@ -61,6 +61,7 @@ ___
   - package.json ( App Setting File )
 </details>
 
+___
 #### actions
 
 actions folder contains all the server-connected functions in this app.
@@ -74,6 +75,7 @@ actions folder contains all the server-connected functions in this app.
    </details>
  - index.js combine & export all the actions into one file.
 
+___
 #### components
 
 basic reuseable components example:
@@ -86,17 +88,22 @@ basic reuseable components example:
         import './Footer.css';
         const Footer = () => {
             return (
-                <footer className="footer">
-                    <br />
-                    <hr />
+                <div className="footer">
                     <div className="container">
-                        <span className="text-muted">Copyright ©2019. All Right Reserved By</span><span> CIKTELECOM </span>
+                        <span className="text-muted">Copyright ©2019. All Right Reserved By</span> CIKTELECOM 
                     </div>
                     <br />
-                </footer>
+                </div>
             );
         }
-        
+
         export default Footer;
         ```
    </details>
+
+
+
+
+
+
+
