@@ -61,17 +61,47 @@ ___
   - package.json ( App Setting File )
 </details>
 
-##### actions
+#### actions
 
 actions folder contains all the server-connected functions in this app.
 
  - <details>
     <summary>const.js export all the const variable for server connections:</summary>
     e.g.:
-    `export const request_URI = "https://localhost:44344/gql";`
+    ```js
+    export const request_URI = "https://localhost:44344/gql";
+    ```
    </details>
  - index.js combine & export all the actions into one file.
 
+#### components
+
+basic reuseable components example:
+- Footer (Folder)
+    * Footer.css
+    * <details>
+    <summary>Footer.js</summary>
+    e.g.:
+    ```js
+    import React from 'react';
+    import './Footer.css';
+    const Footer = () => {
+        return (
+            <footer className="footer">
+                <br />
+                <hr />
+                <div className="container">
+                    <span className="text-muted">Copyright ©2019. All Right Reserved By</span><span> CIKTELECOM </span>
+                </div>
+                <br />
+            </footer>
+        );
+    }
+    export default Footer;
+    ```
+   </details>
+
+   
 
 
 
