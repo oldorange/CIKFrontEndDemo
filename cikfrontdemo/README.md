@@ -14,7 +14,7 @@ below.
     $ npm --version
     6.7.0
 
-(Require Nodejs installed)In the project directory, you can run:
+In the project directory, you can run:
 
 ### `npm start`
 
@@ -42,23 +42,38 @@ ___
 
 ## Demo Project Structure
 
-
 <details>
   <summary>root</summary>
 
-  - [node_modules (Installed Dependency Folder)](#node_modules)
-  - [public (App Entry Folder)](#public)
+  - node_modules (Installed Dependency Folder)
+  - public
     * [locales (translation file folder)](#locales)
     * index.html (Entry Point)
     * favicon.ico (Title icon)
     * [manifest.json](https://developers.google.com/web/fundamentals/web-app-manifest/)
-  - [src (App Source Folder)](#src)
+  - src
     * [actions](#actions)
     * [components](#components)
     * [images](#images)
     * [pages](#pages)
     * [reducers](#reducers)
     * [store](#store)
+  - package.json ( App Setting File )
 </details>
+
+##### actions
+
+actions folder contains all the server-connected functions in this app.
+
+ - <details>
+    <summary>const.js export all the const variable for server connections:</summary>
+    e.g.:
+    `export const request_URI = "https://localhost:44344/gql";`
+   </details>
+ - index.js combine & export all the actions into one file.
+
+
+
+
 
 
