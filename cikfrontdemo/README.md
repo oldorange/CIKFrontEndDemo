@@ -57,7 +57,7 @@ ___
     * images
     * [pages](#pages)
     * [reducers](#reducers)
-    * [store](#store)
+    * [stores](#stores)
   - package.json ( App Setting File )
 </details>
 
