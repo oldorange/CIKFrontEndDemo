@@ -42,17 +42,19 @@ ___
 
 ## Demo Project Structure
 
-<details>
-  <summary>node_module</summary>
-  
-  ### Dependency packages
-</details>
+You can use <pre> to display all spaces & blanks you have typed. E.g.:
 
 <details>
   <summary>node_module</summary>
   
+  ### &nbsp Dependency packages
+</details>
+
+&nbsp <details>
+  <summary>node_module</summary>
+  
   ### Dependency packages
-  <details>
+  &nbsp <details>
   <summary>node_module</summary>
   
   ### Dependency packages
