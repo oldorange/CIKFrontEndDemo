@@ -42,21 +42,20 @@ ___
 
 ## Demo Project Structure
 
-You can use <pre> to display all spaces & blanks you have typed. E.g.:
-
+<pre>
 <details>
-  <summary>node_module</summary>
-  
-  ### &nbsp Dependency packages
+  <summary>node_module</summary> 
+  #### Dependency packages
 </details>
 
-&nbsp <details>
-  <summary>node_module</summary>
+ <details>
+  <summary>src</summary>
   
-  ### Dependency packages
-  &nbsp <details>
-  <summary>node_module</summary>
+  #### Source Folder
+  <details>
+  <summary>action</summary>
   
-  ### Dependency packages
+##### React Actions Folder
 </details>
 </details>
+</pre>
