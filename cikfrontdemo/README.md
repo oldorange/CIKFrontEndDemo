@@ -42,20 +42,20 @@ ___
 
 ## Demo Project Structure
 
-<pre>
+
 <details>
-  <summary>node_module</summary> 
+  <summary>node_module</summary>
+
   #### Dependency packages
 </details>
-
  <details>
   <summary>src</summary>
   
   #### Source Folder
   <details>
-  <summary>action</summary>
+  <pre>  </pre><summary>action</summary>
   
 ##### React Actions Folder
 </details>
 </details>
-</pre>
+
