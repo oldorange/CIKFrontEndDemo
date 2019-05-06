@@ -81,8 +81,7 @@ basic reuseable components example:
     * Footer.css
     * <details>
     <summary>Footer.js</summary>
-    e.g.:
-    ```js
+    ```jsx
     import React from 'react';
     import './Footer.css';
     const Footer = () => {
@@ -101,7 +100,7 @@ basic reuseable components example:
     ```
    </details>
 
-   
+
 
 
 
