@@ -1,10 +1,9 @@
 ﻿import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
+import { ConnectedRouter  } from 'connected-react-router';
 import counterReducer from './counterReducer';
 import weatherForcastsReducer from './weatherForcastsReducer';
 
 export default combineReducers({
-    routing: routerReducer,
     counter: counterReducer,
     weatherForecasts: weatherForcastsReducer
 });

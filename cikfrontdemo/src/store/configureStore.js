@@ -1,7 +1,7 @@
-import { applyMiddleware, compose, createStore } from 'redux';
+import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import { routerMiddleware } from 'react-router-redux';
-import reducers from '../reducers';
+import { routerMiddleware, connectRouter } from 'connected-react-router';
+import reducer from '../reducers';
 
 export default function configureStore(history, initialState) {
 
@@ -12,11 +12,16 @@ export default function configureStore(history, initialState) {
 
   // In development, use the browser's Redux dev tools extension if installed
   const enhancers = [];
-  const isDevelopment = process.env.NODE_ENV === 'development';
-  if (isDevelopment && typeof window !== 'undefined' && window.devToolsExtension) {
-    enhancers.push(window.devToolsExtension());
-  }
 
+  const reducers = combineReducers({
+    router: connectRouter(history),
+    reducer
+  });
+  // const isDevelopment = process.env.NODE_ENV === 'development';
+  // if (isDevelopment && typeof window !== 'undefined' && window.devToolsExtension) {
+  //   enhancers.push(window.devToolsExtension());
+  // }
+  console.log(reducers);
   return createStore(
     reducers,
     initialState,
