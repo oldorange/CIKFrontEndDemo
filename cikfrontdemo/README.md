@@ -76,6 +76,8 @@ actions folder contains all the server-connected functions in this app.
 ___
 #### components
 
+components:  use state & props to display data  &&  dispatch actions to change state
+
 basic reuseable components example:
 - Footer (Folder)
     * Footer.css
@@ -101,7 +103,7 @@ ___
 
 pages Folder contains page components that wrapped one or more reuseable componets import from [components](#components) folder
 
-e.g.:  Counter Page wrap Container component and Counter componet
+e.g.:  Counter Page wraped Container component and Counter componet
 ```jsx
 import React from 'react';
 import { Container } from 'reactstrap';
@@ -116,3 +118,13 @@ const CounterPage = props => {
 };
 export default CounterPage;
 ```
+
+___
+#### reducers
+
+reducers control how actions will change states
+
+___
+#### stores
+
+stores combines all the reducers and create a redux store
