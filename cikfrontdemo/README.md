@@ -44,18 +44,19 @@ ___
 
 
 <details>
-  <summary>node_module</summary>
+  <summary>root</summary>
 
-  #### Dependency packages
+  - [node_modules](#node_modules)
+  - [public](#public)
+    * [actions](#actions)
+    * [components](#components)
+    * [images](#images)
+    * [components](#components)
+  - [src](#src)
+    * [actions](#actions)
+    * [components](#components)
+    * [images](#images)
+    * [components](#components)
 </details>
- <details>
-  <summary>src</summary>
-  
-  #### Source Folder
-  <details>
-  <pre>  </pre><summary>action</summary>
-  
-##### React Actions Folder
-</details>
-</details>
+
 
