@@ -1,4 +1,4 @@
-In the project directory, you can run:
+(Require Nodejs installed)In the project directory, you can run:
 
 ### `npm start`
 
@@ -22,3 +22,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
+___
