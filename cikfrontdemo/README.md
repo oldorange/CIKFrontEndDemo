@@ -54,7 +54,7 @@ ___
   - src
     * [actions](#actions)
     * [components](#components)
-    * [images](#images)
+    * images
     * [pages](#pages)
     * [reducers](#reducers)
     * [store](#store)
@@ -96,9 +96,23 @@ basic reuseable components example:
         export default Footer;
         ```
 
+___
+#### pages
 
+pages Folder contains page components that wrapped one or more reuseable componets import from [components](#components) folder
 
+e.g.:  Counter Page wrap Container component and Counter componet
+```jsx
+import React from 'react';
+import { Container } from 'reactstrap';
+import Counter from '../../components/Counter/Counter';
 
-
-
-
+const CounterPage = props => {
+    return (
+        <Container>
+            <Counter props />
+        </Container>
+    );
+};
+export default CounterPage;
+```
