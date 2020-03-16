@@ -48,13 +48,12 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
     * index.html (Entry Point)
     * favicon.ico (Title icon)
     * [manifest.json](https://developers.google.com/web/fundamentals/web-app-manifest/)
-  - components ()
+  - components (component modules)
     * contact
-  - pages ()
+  - pages (Pages to served)
     * contact-us
     * home
-    - ict
-      * cabling
+    * ict
   - src
     * [actions](#actions)
     * [components](#components)
