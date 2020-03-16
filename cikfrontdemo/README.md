@@ -152,6 +152,7 @@ Contact us form api
 
 ___
 ### config.json
+```json
 config file contain dev & prod environment variable:
 {
     "development":{
@@ -177,7 +178,7 @@ config file contain dev & prod environment variable:
         }
     }
 }
-
+```
 ___
 ### i18n.js
 Internationalize module for [next i18next](https://github.com/isaachinman/next-i18next)
