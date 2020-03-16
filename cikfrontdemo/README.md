@@ -180,6 +180,7 @@ config file contain dev & prod environment variable:
     }
 }
 ```
+
 ___
 ### i18n.js
 Internationalize module for [next i18next](https://github.com/isaachinman/next-i18next)
@@ -222,9 +223,22 @@ some reusable itemList components with responsive style:
 
 
 #### navbar(headline)
-contain 
+contain cbs customer portal entry & switch language function with responsive display
 
+#### navbar(navbar)
+hardcoded nav menu with responsive display
 
+#### others(responsiveTable)
+React hook controlled component with responsive display.
+inline css styling for header/footer height.
+example:
+With header & footer:
+```jsx
+    <ResponsiveTable tableList={tableItemList} headerMinHeight={4.5} footerMinHeight={5}></ResponsiveTable>
+```
+![1584394514(1)](https://user-images.githubusercontent.com/25421843/76801690-84e72c80-67ac-11ea-9e08-bd59ed6a31a8.png)
+
+![1584394564(1)](https://user-images.githubusercontent.com/25421843/76801761-a21bfb00-67ac-11ea-818a-3dbc602ab5d2.png)
 
 ___
 ### pages
