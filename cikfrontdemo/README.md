@@ -41,6 +41,7 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
 
 <details>
   <summary>root</summary>
+    
   - next (build file)
   - node_modules (Installed Dependency Folder)
   - public
