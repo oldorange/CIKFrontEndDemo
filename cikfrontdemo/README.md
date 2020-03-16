@@ -42,7 +42,7 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
 <details>
   <summary>root</summary>
     
-  - next (build file)
+  - .next (build file)
   - node_modules (Installed Dependency Folder)
   - public
     * [locales (translation file folder)](#locales)
@@ -54,7 +54,8 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
   - pages (Pages to served)
     * contact-us
     * home
-    * ict
+    - ict
+      * cabling
   - src
     * [actions](#actions)
     * [components](#components)
