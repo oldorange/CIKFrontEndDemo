@@ -190,10 +190,40 @@ ___
 components:  use state & props to controll react component
 
 #### footer
-render three parts of html elements: MenuList, ResponsiveMenuList and IconMenuList
+render three parts of html elements: MenuList, ResponsiveMenuList and IconMenuList from given json data
 
 MenuList: display in large size device
-![1584391487(1)](https://user-images.githubusercontent.com/25421843/76798381-dcce6500-67a5-11ea-84fa-9f84fb1e43bc.jpg)
+![image](https://user-images.githubusercontent.com/25421843/76798494-0e473080-67a6-11ea-8f53-e6a2db716137.png)
+
+ResponsiveMenuList: display in small size device
+![image](https://user-images.githubusercontent.com/25421843/76798528-228b2d80-67a6-11ea-90b5-681cfd6af5a6.png)
+
+IconMenuList:
+![image](https://user-images.githubusercontent.com/25421843/76798555-2fa81c80-67a6-11ea-9116-5454dd924379.png)
+
+#### Header
+setting seo data(with translation)  & load initial css link:
+```jsx
+const Header = ({ t, title, desc }) => (
+    <Head>
+        <title>{t(title)}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content={t(desc)}></meta>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+    </Head>
+)
+```
+
+#### itemList:
+some reusable itemList components with responsive style:
+![1584392205(1)](https://user-images.githubusercontent.com/25421843/76799031-253a5280-67a7-11ea-8893-b6907a6c56b4.jpg)
+![1584392252(1)](https://user-images.githubusercontent.com/25421843/76799080-3e430380-67a7-11ea-94da-3885780c08c9.jpg)
+
+
+#### navbar(headline)
+contain 
+
 
 
 ___
