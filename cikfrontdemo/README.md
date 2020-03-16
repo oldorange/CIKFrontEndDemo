@@ -77,6 +77,7 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
     * sd-wan
     * support
     * tos
+  - context ([react context](https://reactjs.org/docs/context.html))
   - package.json ( reference packages file )
   - [server.js](#server)
   - [config.json](#config.json)
@@ -186,27 +187,12 @@ Internationalize module for [next i18next](https://github.com/isaachinman/next-i
 ___
 ### components
 
-components:  use state & props to display data  &&  dispatch actions to change state
+components:  use state & props to controll react component
 
-basic reuseable components example:
-- Footer (Folder)
-    * Footer.css
-    * Footer.js
-        ```jsx
-        import React from 'react';
-        import './Footer.css';
-        const Footer = () => {
-            return (
-                <div className="footer">
-                    <div className="container">
-                        <span className="text-muted">Copyright ©2019. All Right Reserved By</span> CIKTELECOM 
-                    </div>
-                    <br />
-                </div>
-            );
-        }
-        export default Footer;
-        ```
+#### footer
+render three parts of html elements: MenuList, ResponsiveMenuList and IconMenuList
+
+MenuList: display in large size device
 
 ___
 ### pages
@@ -229,12 +215,3 @@ const CounterPage = props => {
 export default CounterPage;
 ```
 
-___
-### reducers
-
-reducers control how actions will change states
-
-___
-### stores
-
-stores combines all the reducers and create a redux store
