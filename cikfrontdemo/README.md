@@ -234,7 +234,7 @@ inline css styling for header/footer height.
 example:
 With header & footer:
 ```jsx
-    <ResponsiveTable tableList={tableItemList} headerMinHeight={4.5} footerMinHeight={5}></ResponsiveTable>
+<ResponsiveTable tableList={tableItemList} headerMinHeight={4.5} footerMinHeight={5}></ResponsiveTable>
 ```
 ![1584394514(1)](https://user-images.githubusercontent.com/25421843/76801690-84e72c80-67ac-11ea-9e08-bd59ed6a31a8.png)
 
