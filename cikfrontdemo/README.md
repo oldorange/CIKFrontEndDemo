@@ -124,7 +124,7 @@ Contact us form api
     const badRequestError = {meta:{code:-400, code_description: "Bad Request bb"}};
     try{
       if(req.body.token){
-        const url = `https://www.google.com/recaptcha/api/siteverify?           secret=${config.constant.reCaptchaSecretKey}&response=${req.body.token}`;
+        const url = `https://www.google.com/recaptcha/api/siteverify?secret=${config.constant.reCaptchaSecretKey}&response=${req.body.token}`;
         axios.post(url).then((ReCaptCharesponse) => {
           if(ReCaptCharesponse.data.success){
             axios.post(apiHost + ":" + apiport + "/api/Contact/SendContactEmail", req.body).then((APIResponse) => {
