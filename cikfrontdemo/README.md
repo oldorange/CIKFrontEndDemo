@@ -109,12 +109,44 @@ MultiLanguages switch auto fetch pages under current language 404 fixed:
 ```jsx
    server.get('/_next/static/*/pages/zh.js', (req, res) => {
     return res.sendStatus(200);
-  });
+   });
 
-  server.get('/_next/static/*/pages/zh/*', (req, res) => {
-    return res.sendStatus(200);
+   server.get('/_next/static/*/pages/zh/*', (req, res) => {
+     return res.sendStatus(200);
+   });
+```
+
+Routing 4:
+Contact us form api
+```jsx
+    server.post('/api/contactForm', (req, res) => {
+    const internalError = {meta:{code:-500, code_description: "Internal Server Error"}};
+    const badRequestError = {meta:{code:-400, code_description: "Bad Request bb"}};
+    try{
+      if(req.body.token){
+        const url = `https://www.google.com/recaptcha/api/siteverify?           secret=${config.constant.reCaptchaSecretKey}&response=${req.body.token}`;
+        axios.post(url).then((ReCaptCharesponse) => {
+          if(ReCaptCharesponse.data.success){
+            axios.post(apiHost + ":" + apiport + "/api/Contact/SendContactEmail", req.body).then((APIResponse) => {
+              return res.json(APIResponse.data);
+            }).catch((error) => {
+              return res.json(internalError);
+            });
+          };
+        }).catch((err) => {
+          return res.json(internalError);
+        });
+      }
+      else{
+        return res.json(badRequestError);
+      }
+    }catch(e){
+      console.log('Catch an error: ', e);
+      return res.json(internalError);
+    }
   });
 ```
+
 
 
 ___
