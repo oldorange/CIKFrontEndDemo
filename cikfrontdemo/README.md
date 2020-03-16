@@ -78,20 +78,44 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
     * support
     * tos
   - package.json ( reference packages file )
+  - [server.js](#server)
   
 </details>
 
 ___
-### actions
+### server
 
-actions folder contains all the server-connected functions in this app.
+server file is the custom nodejs [server](https://nextjs.org/docs/advanced-features/custom-server) for nextjs SSR.
 
- - const.js export all the const variable for server connections:
-   ```js
-      export const request_URI = "https://localhost:44344/gql";
-   ```
+Routing 1:
+Fix icon fetch error in production.
+```jsx
+    server.get('/favicon.ico', (req, res) => (
+        res.status(200).sendFile('favicon.ico', { root: __dirname + '/public/static/' })
+    ));
+```
 
- - index.js combine & export all the actions into one file.
+Routing 2:
+i18n middleware init.
+```jsx
+    const nextI18NextMiddleware = require('next-i18next/middleware').default
+    const nextI18next = require('./i18n')
+    await nextI18next.initPromise
+    server.use(nextI18NextMiddleware(nextI18next));
+```
+
+Routing 3:
+MultiLanguages switch auto fetch pages under current language 404 fixed:
+```jsx
+   server.get('/_next/static/*/pages/zh.js', (req, res) => {
+    return res.sendStatus(200);
+  });
+
+  server.get('/_next/static/*/pages/zh/*', (req, res) => {
+    return res.sendStatus(200);
+  });
+```
+
 
 ___
 ### components
