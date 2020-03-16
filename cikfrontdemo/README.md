@@ -44,33 +44,45 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
     
   - .next (build file)
   - node_modules (Installed Dependency Folder)
-  - public
-    * [locales (translation file folder)](#locales)
-    * index.html (Entry Point)
+  - public/static
+    - images (for images without language preference, set image path under 'en' subfolder)
+      * en
+      * fr
+      * zh
+      * icons
+    - locales (translation file folder)
+      * en
+      * fr
+      * zh
     * favicon.ico (Title icon)
-    * [manifest.json](https://developers.google.com/web/fundamentals/web-app-manifest/)
-  - components (component modules)
-    * contact
-  - pages (Pages to served)
+    * variables.scss (shared scss const value)
+    * styleFunctions.scss (sharded scss util function)
+  - [components (component modules)](#components)
+    * footer
+    * header
+    * itemLists
+    * navbar
+    * others
+    * slideShow
+    * reCaptcha
+  - [pages](#pages) (Pages to served)
+    * [layout.js](#layout) (all pages wrap their content with this page component)
+    * _error.js (futhur 404 page)
+    * _app.js (frontend startup page)
     * contact-us
     * home
-    <summary>ict</summary>
-      - cabling
-      - cabling
-      - cabling
-      - cabling
-  - src
-    * [actions](#actions)
-    * [components](#components)
-    * images
-    * [pages](#pages)
-    * [reducers](#reducers)
-    * [stores](#stores)
-  - package.json ( App Setting File )
+    * ict
+    * internet
+    * phone
+    * sd-wan
+    * support
+    * tos
+  - package.json ( reference packages file )
+  
 </details>
 
 ___
-#### actions
+### actions
 
 actions folder contains all the server-connected functions in this app.
 
@@ -82,7 +94,7 @@ actions folder contains all the server-connected functions in this app.
  - index.js combine & export all the actions into one file.
 
 ___
-#### components
+### components
 
 components:  use state & props to display data  &&  dispatch actions to change state
 
@@ -107,7 +119,7 @@ basic reuseable components example:
         ```
 
 ___
-#### pages
+### pages
 
 pages Folder contains page components that wrapped one or more reuseable componets import from [components](#components) folder
 
@@ -128,11 +140,11 @@ export default CounterPage;
 ```
 
 ___
-#### reducers
+### reducers
 
 reducers control how actions will change states
 
 ___
-#### stores
+### stores
 
 stores combines all the reducers and create a redux store
