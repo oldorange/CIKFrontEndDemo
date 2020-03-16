@@ -53,7 +53,7 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
   - pages ()
     * contact-us
     * home
-    -ict
+    - ict
       * cabling
   - src
     * [actions](#actions)
