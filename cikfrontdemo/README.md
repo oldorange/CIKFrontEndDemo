@@ -240,6 +240,9 @@ With header & footer:
 
 ![1584394564(1)](https://user-images.githubusercontent.com/25421843/76801761-a21bfb00-67ac-11ea-818a-3dbc602ab5d2.png)
 
+In this component, header means first column:
+![1584394717(1)](https://user-images.githubusercontent.com/25421843/76801937-0048de00-67ad-11ea-95de-5c80925ffd55.png)
+
 ___
 ### pages
 
