@@ -193,6 +193,8 @@ components:  use state & props to controll react component
 render three parts of html elements: MenuList, ResponsiveMenuList and IconMenuList
 
 MenuList: display in large size device
+![1584391487(1)](https://user-images.githubusercontent.com/25421843/76798381-dcce6500-67a5-11ea-84fa-9f84fb1e43bc.jpg)
+
 
 ___
 ### pages
