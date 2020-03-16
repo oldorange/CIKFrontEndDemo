@@ -35,9 +35,8 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
 ### Reverse Proxy from domain name to localhost on IIS
 
 1. Host empty folder on IIS with {desire domain name}.
-2. Set up in/out bound rules by URL Rewrite Module to redirect request/response between localhost:9000 to {desire domain name}
+2. Set up in/out bound rules by URL Rewrite Module to redirect request/response between localhost:9000 to {desire domain name}<br>
 
-<br>
 ## Demo Project Structure
 
 <details>
