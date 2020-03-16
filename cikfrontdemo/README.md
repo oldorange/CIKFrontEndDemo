@@ -79,6 +79,7 @@ Deploy production app on [http://localhost:9000](http://localhost:9000)
     * tos
   - package.json ( reference packages file )
   - [server.js](#server)
+  - [config.json](#config.json)
   
 </details>
 
@@ -86,6 +87,8 @@ ___
 ### server
 
 server file is the custom nodejs [server](https://nextjs.org/docs/advanced-features/custom-server) for nextjs SSR.
+
+const file: [config.json](#config.json)
 
 Routing 1:
 Fix icon fetch error in production.
@@ -147,7 +150,37 @@ Contact us form api
   });
 ```
 
+___
+### config.json
+config file contain dev & prod environment variable:
+{
+    "development":{
+        "constant": {
+            "port": 9000,
+            "reCaptchaClientKey": "",
+            "reCaptchaSecretKey": ""
+        },
+        "url":{
+            "apiHost": "http://localhost",
+            "apiPort": 9999
+        }
+    },
+    "production":{
+        "constant": {
+            "port": 9000,
+            "reCaptchaClientKey": "",
+            "reCaptchaSecretKey": ""
+        },
+        "url":{
+            "apiHost": "http://localhost",
+            "apiPort": 9001
+        }
+    }
+}
 
+___
+### i18n.js
+Internationalize module for [next i18next](https://github.com/isaachinman/next-i18next)
 
 ___
 ### components
