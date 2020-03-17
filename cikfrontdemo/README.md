@@ -243,6 +243,51 @@ With header & footer:
 In this component, header means first column:
 ![1584394717(1)](https://user-images.githubusercontent.com/25421843/76801937-0048de00-67ad-11ea-95de-5c80925ffd55.png)
 
+#### reCaptcha
+Create reCaptcha script tag in react. 
+1. Use loadReCaptcha() to initialize the ReCaptcha
+```jsx
+    useEffect(() => {
+        loadReCaptcha(clientKey);
+    });
+```
+
+2. Use ReCaptcha to integrate ReCaptcha in a particular component
+```jsx
+    const verifyCallback = (recaptchaToken) => {
+        // Here you will get the final recaptchaToken!!!  
+        setToken(recaptchaToken);
+    }
+    <input value={token} readOnly hidden name="token"></input>
+    <ReCaptcha
+       sitekey={clientKey}
+       action='/api/contactForm'
+       verifyCallback={verifyCallback}
+    />
+```
+
+#### slideShow
+
+This component is based on [react bootstrap component](https://react-bootstrap.github.io/components/carousel/)
+render data example:
+```json
+    [
+        {
+            src: 'internet/airfiber-banner-1.jpg',
+            mobile: 'internet/airfiber-banner-1-mobile.jpg',
+            altText: 'A Banner',
+            title: '',
+            caption: '',
+            link: '/',
+            shared: true
+        }
+    ]
+```
+
+'shared' means use default banner folder(which is en version)
+If shared set to false, componet will switch src when switching languages.
+
+
 ___
 ### pages
 
